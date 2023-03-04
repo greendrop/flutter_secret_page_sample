@@ -1,3 +1,7 @@
+こちらの記事のサンプルコード
+https://zenn.dev/greendrop/articles/2e76a0d354bc60
+
+
 # flutter_secret_page_sample
 
 A new Flutter project.
