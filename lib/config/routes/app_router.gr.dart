@@ -22,7 +22,13 @@ class _$AppRouter extends RootStackRouter {
         routeData: routeData,
         child: const MainPage(),
       );
-    }
+    },
+    SecretRoute.name: (routeData) {
+      return MaterialPageX<dynamic>(
+        routeData: routeData,
+        child: const SecretPage(),
+      );
+    },
   };
 
   @override
@@ -30,7 +36,11 @@ class _$AppRouter extends RootStackRouter {
         RouteConfig(
           MainRoute.name,
           path: '/',
-        )
+        ),
+        RouteConfig(
+          SecretRoute.name,
+          path: '/secret',
+        ),
       ];
 }
 
@@ -44,4 +54,16 @@ class MainRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'MainRoute';
+}
+
+/// generated route for
+/// [SecretPage]
+class SecretRoute extends PageRouteInfo<void> {
+  const SecretRoute()
+      : super(
+          SecretRoute.name,
+          path: '/secret',
+        );
+
+  static const String name = 'SecretRoute';
 }
